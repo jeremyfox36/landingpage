@@ -8,6 +8,7 @@ html, body {
 .wrapper{
     display: -ms-grid;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .nav{
@@ -32,4 +33,30 @@ html, body {
     margin: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+}
+
+.features {
+grid-column: 2 / 3;
+grid-row: 1 / 2;
+}
+.form {
+grid-column: 2 / 3;
+grid-row: 2 / 3;
+}
+.media {
+grid-column: 3 / 4;
+grid-row: 2 / 3;
+}
+.pricing {
+grid-column: 1 / 2;
+grid-row: 1 / 2;
 }
