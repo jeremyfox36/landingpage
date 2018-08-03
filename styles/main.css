@@ -25,11 +25,13 @@ body {
     }
 
 .nav{
+    display: flex;
     width: 100%;
     position: fixed;
     top: 0;
     background-color: var(--color-primary-0);
     color: var(--color-primary-4);
+    border: 2px blue solid;
 }
 
 .logo,.icon{
@@ -39,13 +41,16 @@ body {
     margin: 20px 20px 20px 20px;
 }
 
-.nav a {
+.nav > a {
+    display: flex;
     float: right;
-    display: block;
+    flex: 1;
     background-color: var(--color-primary-0);
     margin: 20px 20px 20px 20px;
     text-decoration: none;
     color: var(--color-primary-4);
+    align-items: center;
+    justify-content: center;
 }
 
 .box {
@@ -68,19 +73,21 @@ button{
     margin-left: auto;
     margin-right: auto;
 }
+
 .wrapper{
     display: -ms-grid;
     display: grid;
     grid-gap: 10px;
     background-color: var(--color-primary-0);
     grid-template-columns: 0.25fr 0.5fr 0.25fr;
-    grid-template-rows: 0.25fr minmax(100px, 0.25fr) 0.25fr 0.25fr 0.25fr;
+    grid-template-rows: 0.2fr minmax(100px, 0.5fr) 0.5fr 0.5fr 0.5fr 0.25fr;
     grid-template-areas: 
     ". . ."
     ". form ."
     ". features ."
     ". media ."
     "pricing pricing pricing"
+    "footer . ."
     ;
 }
 
@@ -113,4 +120,8 @@ button{
 }
 .pricing {
     grid-area: pricing;
+}
+
+.footer{
+    grid-area: footer;
 }

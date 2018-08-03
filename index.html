@@ -9,43 +9,42 @@
     <title>Cool camping stuff!</title>
 </head>
 <body>
-<header>
-  <nav class="nav" role="navigation">
-    <img class="logo" src="images/tent.svg">
-    <a href="#">Features</a>
-    <a href="#">How it works</a>
-    <a href="#">Pricing</a>
+<header id="header">
+  <nav class="nav" role="navigation" id="nav-bar">
+    <img class="logo" src="images/tent.svg" id="header-img">
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#video" class="nav-link">How it works</a>
+    <a href="#pricing" class="nav-link">Pricing</a>
   </nav>
 </header>
 <div class="wrapper">
   <div class="box form">
-    <form class="form" action="">
-      <input type="text" placeholder="please enter you email address for more details" size="50">
-      <div class="button-holder"><button type="submit">Find out more</button></div>
+    <form class="form" action="https://www.freecodecamp.com/email-submit" id="form">
+      <input type="email" placeholder="please enter you email address for more details" size="50" id="email">
+      <div class="button-holder"><button type="submit" id="submit">Find out more</button></div>
     </form>
   </div><!--form-->
-  <div class="box features" name="features">
+  <div class="box features" id="features">
     <div><img class="icon" src="images/compass.svg" alt="compass image"></div>
-    <div><h2>Where should you go</h2></div>
+    <div><h3>Where should you go</h3></div>
     <div><img class="icon" src="images/bbq.svg" alt="barbeque icon"></div>
-    <div><h2>Feed your adventure</h2></div>
+    <div><h3>Feed your adventure</h3></div>
     <div><img class="icon" src="images/kayak.svg" alt="kayak icon"></div>
-    <div><h2>What to do when you get there</h2></div>
+    <div><h3>What to do when you get there</h3></div>
   </div>
   <!--features-->
 
-  <div class="box media">
+  <div class="box media" id="video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/MJ1SMwj8T0k?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div><!--media-->
 
-  <div class="box pricing">
+  <div class="box pricing" id="pricing">
 Here is the pricing info
   </div>
-
+  <footer class="footer">
+      <div class="footer">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </footer>
 </div><!--end of wrapper-->
 
-<footer class="footer">
-  <div class="footer">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-</footer>
 </body>
 </html>
