@@ -11,7 +11,7 @@
 </head>
 <body>
 <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#"><img src="images/tent.svg" class="icon" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#video">How it works</a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="#pricing">Pricing</a>
             </li>
@@ -34,19 +33,34 @@
       </nav>
 </header>
 <div class="container">
-  <div class="form-group">
+  <div class="row justify-content-center">
+  <div class="col-sm-4">
+  <div class="form-group text-center">
     <form class="form" action="https://www.freecodecamp.com/email-submit" id="form">
-      <input class="form-control "type="email" placeholder="please enter you email address for more details" size="50" id="email">
+      <input class="form-control "type="email" placeholder="please enter you email address" size="50" id="email">
       <button type="submit" class="btn btn-primary"id="submit">Find out more</button>
     </form>
+  </div>
   </div><!--form-->
-  <div class="box features" id="features">
-    <div><img class="icon" src="images/compass.svg" alt="compass image"></div>
-    <div><h3>Where should you go</h3></div>
-    <div><img class="icon" src="images/bbq.svg" alt="barbeque icon"></div>
-    <div><h3>Feed your adventure</h3></div>
-    <div><img class="icon" src="images/kayak.svg" alt="kayak icon"></div>
-    <div><h3>What to do when you get there</h3></div>
+  </div>
+
+<div class="row justify-content-center">
+  <div class="col-sm-10" id="features">
+    <div class="row">
+      <div class="col-sm-2 text-right"><img class="icon img-fluid" src="images/compass.svg" alt="compass image"></div>
+      <div class="col-sm-10 text-left"><h4>Where should you go</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2 text-right"><img class="icon img-fluid" src="images/bbq.svg" alt="barbeque icon"></div>
+      <div class="col-sm-10 text-left"><h4>Feed your adventure</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2 text-right"><img class="icon img-fluid" src="images/kayak.svg" alt="kayak icon"></div>
+      <div class="col-sm-10 text-left"><h4>What to do when you get there</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    </div>
+  </div>
   </div>
   <!--features-->
 
